@@ -24,7 +24,12 @@
 
 		.lg-heading{
 			line-height: 1;
+			font-size: 5rem;
 			margin-bottom: 1rem;
+		}
+
+		.sm-heading{
+			font-size: 1.5rem;
 		}
 
 		.about-info {
@@ -40,6 +45,12 @@
 
 		.projects {
 			grid-template-columns: 1fr;
+		}
+
+		.boxes {
+			div {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
