@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(image_path('background.jpg'));
+$home-image: url('../images/background.jpg');
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -11,7 +11,7 @@ $background-opacity: 0.9;
 @mixin background {
 	@if $show-home-image{
 		&#bg-img {
-			background: $home-image;
+			background: url('../images/background.jpg');
 			background-attachment: fixed;
 			background-size: cover;
 
@@ -64,6 +64,8 @@ $background-opacity: 0.9;
 		@content;
 	}
 }
+
+@import 'menu';
 
 * {
 	box-sizing: border-box;
@@ -149,7 +151,7 @@ main {
 		margin: auto;
 		width: 250px;
 		height: 250px;
-		background: url(image_path('profileImage.png'));
+		background: url('../images/profileImage.png');
 		background-size: 250px;
 		border-radius: 50%;
 		border: solid 3px $secondary-color;
@@ -245,3 +247,5 @@ main {
 	color: set-text-color($primary-color);
 	height: 60px;
 }
+
+@import 'mobile';
