@@ -237,7 +237,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 0px;
+    padding: 4rem 0px 0px 0px;
     align-items: center;
     text-align: center; }
     main .lg-heading {
